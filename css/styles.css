@@ -14,6 +14,11 @@ body {
 }
 :root {
   --brand-color: #2196f3;
+  --black-color: #000000;
+  --white-color: #ffffff;
+  --grey-color: #757575;
+  --hero-color: #2f303a;
+  --text-color: #212121;
 }
 
 .main-container {
@@ -24,7 +29,16 @@ body {
   margin-left: auto;
   outline: 2px solid tomato;
 }
-
+.container {
+  width: 1200px;
+  margin: 0 auto;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+.header-container {
+  display: flex;
+  outline: 3px solid green;
+}
 .logo {
   font-family: "Raleway", sans-serif;
   font-weight: bold;
@@ -34,12 +48,24 @@ body {
   color: var(--brand-color);
 }
 .header-color2 {
-  color: #000000;
+  color: var(--black-color);
 }
+.navigation {
+  display: flex;
+  flex-direction: row;
+  outline: 2px solid blue;
+}
+.div-class {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+
 .site-nav {
   font-weight: 500;
   font-size: 14px;
-  color: #000;
+  color: var(--black-color);
 }
 .site-nav:hover,
 .site-nav:focus {
@@ -49,12 +75,21 @@ body {
 .hero-section {
   margin-top: 0px;
   margin-bottom: 0px;
-  background-color: #2f303a;
+  background-color: var(--hero-color);
   text-align: center;
   outline: 2px solid red;
 }
-
+.hero-container {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  background-color: var(--hero-color);
+  padding-top: 200px;
+  padding-bottom: 200px;
+  width: 1600px;
+}
 .hero-section-title {
+  width: 700px;
   font-style: normal;
   font-weight: 900;
   font-size: 44px;
@@ -62,8 +97,9 @@ body {
   text-align: center;
   letter-spacing: 0.06em;
   text-transform: uppercase;
-  color: #ffffff;
-  background-color: #2f303a;
+  margin-bottom: 30px;
+  color: var(--white-color);
+  background-color: var(--hero-color);
 }
 
 .button {
@@ -73,9 +109,22 @@ body {
   align-items: center;
   text-align: center;
   letter-spacing: 0.06em;
-  color: #ffffff;
+  color: var(--white-color);
   background-color: var(--brand-color);
   cursor: pointer;
+}
+.main-btn {
+  text-align: center;
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 30px;
+  letter-spacing: 0.06em;
+  padding: 10px 32px;
+  border: #2196f3;
+  color: var(--white-color);
+  background: var(--brand-color);
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
 }
 
 .button-color1 {
@@ -84,7 +133,7 @@ body {
   line-height: 26px;
   text-align: center;
   letter-spacing: 0.03em;
-  color: #ffffff;
+  color: var(--white-color);
   background-color: var(--brand-color);
   cursor: pointer;
 }
@@ -95,21 +144,35 @@ body {
   line-height: 26px;
   text-align: center;
   letter-spacing: 0.03em;
-  color: #ffffff;
+  color: var(--white-color);
   background-color: var(--brand-color);
 }
 
-.features {
-  font-weight: 700;
-  font-size: 14px;
-  line-height: 16.41px;
-  text-transform: uppercase;
+.features-item:not(:last-child) {
+  margin-right: 30px;
 }
-.features-1 {
-  font-weight: 400;
+.features-main {
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
+.features-section {
+  display: flex;
+  flex-direction: row;
+}
+.features-list-item {
+  font-weight: bold;
   font-size: 14px;
-  line-height: 24px;
-  color: #757575;
+  line-height: 1.14;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: var(--text-color);
+  margin-bottom: 10px;
+}
+.features-list-text {
+  font-size: 14px;
+  line-height: 1.7;
+  letter-spacing: 0.03em;
+  color: var(--grey-color);
 }
 
 .what-we-do-header {
@@ -163,7 +226,7 @@ body {
 }
 .portfolio-btn:hover,
 .portfolio-btn:focus {
-  color: #ffffff;
+  color: var(--white-color);
   background-color: var(--brand-color);
 }
 
@@ -171,11 +234,11 @@ body {
   background-color: #2f303a;
 }
 .footer-color2 {
-  color: #ffffff;
+  color: var(--white-color);
 }
 .address {
   font-style: normal;
-  color: #ffffff;
+  color: var(--white-color);
 }
 .phone-mail {
   color: #757575;
