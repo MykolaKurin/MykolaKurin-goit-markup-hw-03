@@ -49,21 +49,12 @@ img {
   padding-left: 15px;
   padding-right: 15px;
 }
-.rectangle {
-  display: flex;
-  width: 1200px;
-  height: 14px;
-  padding-left: 201px;
-  padding-right: 200px;
-  margin-top: -15px;
-  position: relative;
-  background-color: var(--rectangle-color);
-  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-}
+
 .header-container {
   display: flex;
+  flex-direction: row;
   border-bottom: 1px solid #ececec;
-  padding: 0px;
+  padding: 0px 0px 0px 0px;
   width: 1600px;
   height: 80px;
 }
