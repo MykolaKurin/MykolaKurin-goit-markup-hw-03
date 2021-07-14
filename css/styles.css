@@ -302,9 +302,7 @@ img {
 .filters-item:not(:last-child) {
   margin-right: 8px;
 }
-.portfolio-section-container {
-  /* padding-top: 94px; */
-}
+
 .portfolio-container {
   display: flex;
   /* width: 1600px; */
